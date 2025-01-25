@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUARIM Рыбный Ресторан</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Общий контейнер для всего сайта -->
+    <div class="container">
+        <!-- Шапка с навигацией -->
+        <header>
+            <div class="header-top">
+                <h1>AQUARIM</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#history">История</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#delivery">Доставка</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#oasis">Оазис</a></li>
+                        <li><a href="#reservation">Бронь</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-bottom">
+                <h2>РЫБНЫЙ РЕСТОРАН</h2>
+                <p>Откройте для себя мир изысканных вкусов с нашими рыбными деликатесами, приготовленными специально для вас</p>
+            </div>
+        </header>
+
+        <!-- Секция "История рыбного искушения" -->
+        <section class="section" id="history">
+            <div class="history-content">
+                <h2>ИСТОРИЯ РЫБНОГО ИСКУШЕНИЯ</h2>
+                <p class="history-description">Наша история началась с мечты о создании места, где каждый может насладиться непревзойденным вкусом свежей рыбы прямо у себя дома. Мы хотели подарить вам настоящее морское путешествие.</p>
+                <p class="history-detail">Мы – это место, где каждая деталь имеет значение.</p>
+                <a href="#" class="button">Узнать больше</a>
+            </div>
+            <img src="1.png" alt="История рыбного искушения" class="history-image">
+        </section>
+
+        <!-- Секция "Меню" -->
+        <section class="section" id="menu">
+            <h2>Меню</h2>
+            <p>Свежая рыба из наших аквариумов – гарантированная свежесть</p>
+            <img src="2.png" alt="Меню">
+        </section>
+
+        <!-- Секция "Доставка" -->
+        <section class="section" id="delivery">
+            <h2>ДОСТАВКА</h2>
+            <p class="delivery-subtitle"><strong>ВЫСТРО, УДОБНО, НАДЕЖНО ДОСТАВКА ПО МОСКВЕ И МО</strong></p>
+            <div class="delivery-blocks">
+                <div class="delivery-block">
+                    <span class="delivery-number">01</span>
+                    <h3>ТЕРМОСУМКИ ДЛЯ СОХРАНЕНИЯ ТЕПЛА</h3>
+                    <p>Мы доставляем в специальных термосумках, чтобы сохранить температуру и свежесть блюд</p>
+                </div>
+                <div class="delivery-block">
+                    <span class="delivery-number">02</span>
+                    <h3>ГОРЯЧЕЕ И СВЕЖЕЕ</h3>
+                    <p>Ваш заказ не успеет остыть и не потеряет своего вкуса в пути</p>
+                </div>
+                <div class="delivery-block">
+                    <span class="delivery-number">03</span>
+                    <h3>КАЧЕСТВО КАК В РЕСТОРАНЕ</h3>
+                    <p>Вы получите блюда в том виде, в котором их приготовил повар – свежими, вкусными и красивыми.</p>
+                </div>
+            </div>
+            <img src="5.png" alt="Доставка" class="delivery-image">
+        </section>
+
+        <!-- Секция "Отзывы" -->
+        <section class="section" id="reviews">
+            <h2>БЕСЦЕННЫЕ ОТЗЫВЫ ДОКАЗЫВАЮЩИЕ НАШЕ МАСТЕРСТВО</h2>
+            <p>Мы гордимся доверием наших клиентов и ценим каждый отзыв, который вдохновляет нас становиться еще лучше</p>
+            <p class="reviews-click">Кликните на отзыв, чтобы узнать больше</p>
+            <img src="3.png" alt="Отзывы" class="reviews-image">
+        </section>
+
+        <!-- Секция "Оазис" -->
+        <section class="section" id="oasis">
+            <div class="oasis-content">
+                <h2>Оазис выгодных предложений</h2>
+                <p class="oasis-subtitle">СКИДКА 15% НА ПЕРВЫЙ ЗАКАЗ</p>
+                <p class="oasis-description">Воспользуйтесь этой возможностью и откройте для себя мир изысканных морских деликатесов.</p>
+                <a href="#" class="button">Заказать сейчас</a>
+            </div>
+            <img src="4.png" alt="Оазис выгодных предложений" class="oasis-image">
+        </section>
+
+        <!-- Секция "Бронь стола" -->
+        <section class="section" id="reservation">
+            <h2>ЗАБРОНИРУЙТЕ СВОЕ МЕСТО</h2>
+            <h3>ЗА ЛУЧШИМ СТОЛОМ</h3>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Время:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Кол-во гостей:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Ваши пожелания:</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+                <button type="submit" class="button">Забронировать</button>
+            </form>
+        </section>
+
+        <!-- Секция "Контакты" -->
+        <section class="section" id="contacts">
+            <h2>КОНТАКТЫ</h2>
+            <p>МОРСКАЯ АТМОСФЕРА, ОБЪЕДИНЯЮЩАЯ ЛЮДЕЙ</p>
+            <p>ЕСЛИ У ВАС ОСТАЛИСЬ ВОПРОСЫ:</p>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Тверская, д.8</li>
+                <li><i class="fas fa-phone"></i> +7 (965) 478–89–76</li>
+                <li><i class="fas fa-envelope"></i> oquorim@gmail.com</li>
+            </ul>
+            <p>МЫ В СОЦИАЛЬНЫХ СЕТЯХ:</p>
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AQUARIM</h3>
+                    <p>Рыбный ресторан, где каждый найдет что-то для себя. Мы предлагаем свежие морепродукты и уютную атмосферу.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#history">История</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#delivery">Доставка</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Тверская, д.8</li>
+                        <li><i class="fas fa-phone"></i> +7 (965) 478–89–76</li>
+                        <li><i class="fas fa-envelope"></i> oquorim@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2018–2024 AQUARIM. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
