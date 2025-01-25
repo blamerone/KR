@@ -5,227 +5,246 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AQUARIM Рыбный Ресторан</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">>
 </head>
 <body>
-    <div class="container">
-        <!-- Новая шапка -->
-        <header>
-            <div class="field">
-                <div class="logo">
-                    <p class="hello">AQUA</p>
-                    <img src="11.png" alt="Креветка на вилке" class="header-image"> <!-- Картинка креветки -->
-                    <p class="hello">RIM</p>
-                </div>
-                <div class="menu">
-                    <div class="item">
-                        <p class="menu_item">О ресторане</p>
+
+    <!-- Шапка -->
+    <header class="header">
+        <nav>
+            <div class="container">
+                <div class="nav__items">
+                    <div class="logo">
+                        <p class="hello">AQUA</p>
+                        <img src="11.png" alt="Креветка на вилке" class="header-image">
+                        <p class="hello">RIM</p>
                     </div>
-                    <div class="item">
-                        <p class="menu_item">Меню</p>
+                    <ul class="nav__list">
+                        <li><button>О ресторане</button></li>
+                        <li><button>Меню</button></li>
+                        <li><button>Доставка и оплата</button></li>
+                        <li><button>Контакты</button></li>
+                    </ul>
+                    <div class="basket">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.4146 33.4995C21.8549 33.494 37.7234 33.4995 37.7234 33.4995C38.5691 33.5023 39.3934 33.2332 40.0748 32.732C40.7561 32.2307 41.2585 31.5238 41.5078 30.7155L44.7783 20.2481C44.8156 20.1294 44.8243 20.0035 44.8039 19.8807C44.7835 19.758 44.7344 19.6418 44.6607 19.5415C44.587 19.4412 44.4908 19.3597 44.3797 19.3035C44.2687 19.2474 44.146 19.2182 44.0216 19.2183H18.4519C17.6357 16.6096 15.0141 15.0156 12.2925 15.2513C11.2629 15.2624 11.2478 16.8277 12.2925 16.8381H13.0072C13.9615 16.8402 14.8858 17.1712 15.6247 17.7753C16.3635 18.3793 16.8718 19.2195 17.0638 20.1545L18.2972 30.0244C18.4218 31.0082 18.9113 31.9092 19.6687 32.549C17.9038 33.8835 18.5693 36.8842 20.7205 37.3681C19.3649 39.3659 20.9617 42.2999 23.3977 42.2269C25.7821 42.292 27.3948 39.4754 26.1288 37.4665H36.5303C35.262 39.4722 36.8794 42.2952 39.2622 42.2269C41.0121 42.2269 42.4351 40.8036 42.4351 39.0533C42.4351 37.3031 41.0121 35.8797 39.2622 35.8797H21.4146C19.8528 35.8504 19.8488 33.5289 21.4146 33.4995ZM18.7438 20.8051H42.9428L39.9944 30.2426C39.8445 30.7275 39.543 31.1515 39.1342 31.4522C38.7253 31.7528 38.2308 31.9143 37.7234 31.9127H22.2332C21.0355 31.9127 20.0201 31.0162 19.8718 29.8276L18.7438 20.8051ZM24.9841 39.0533C24.9469 41.1384 21.8477 41.1384 21.8112 39.0533C21.8485 36.9683 24.9477 36.9683 24.9841 39.0533ZM40.8487 39.0533C40.8114 41.1384 37.7131 41.1384 37.6758 39.0533C37.7131 36.9683 40.8114 36.9683 40.8487 39.0533Z" fill="#E8EDFF"/>
+                        </svg>    
                     </div>
-                    <div class="item1">
-                        <p class="menu_item">Доставка и оплата</p>
-                    </div>
-                    <div class="item">
-                        <p class="menu_item">Контакты</p>
-                    </div>
-                </div>
-                <div class="basket">
-                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21.4146 33.4995C21.8549 33.494 37.7234 33.4995 37.7234 33.4995C38.5691 33.5023 39.3934 33.2332 40.0748 32.732C40.7561 32.2307 41.2585 31.5238 41.5078 30.7155L44.7783 20.2481C44.8156 20.1294 44.8243 20.0035 44.8039 19.8807C44.7835 19.758 44.7344 19.6418 44.6607 19.5415C44.587 19.4412 44.4908 19.3597 44.3797 19.3035C44.2687 19.2474 44.146 19.2182 44.0216 19.2183H18.4519C17.6357 16.6096 15.0141 15.0156 12.2925 15.2513C11.2629 15.2624 11.2478 16.8277 12.2925 16.8381H13.0072C13.9615 16.8402 14.8858 17.1712 15.6247 17.7753C16.3635 18.3793 16.8718 19.2195 17.0638 20.1545L18.2972 30.0244C18.4218 31.0082 18.9113 31.9092 19.6687 32.549C17.9038 33.8835 18.5693 36.8842 20.7205 37.3681C19.3649 39.3659 20.9617 42.2999 23.3977 42.2269C25.7821 42.292 27.3948 39.4754 26.1288 37.4665H36.5303C35.262 39.4722 36.8794 42.2952 39.2622 42.2269C41.0121 42.2269 42.4351 40.8036 42.4351 39.0533C42.4351 37.3031 41.0121 35.8797 39.2622 35.8797H21.4146C19.8528 35.8504 19.8488 33.5289 21.4146 33.4995ZM18.7438 20.8051H42.9428L39.9944 30.2426C39.8445 30.7275 39.543 31.1515 39.1342 31.4522C38.7253 31.7528 38.2308 31.9143 37.7234 31.9127H22.2332C21.0355 31.9127 20.0201 31.0162 19.8718 29.8276L18.7438 20.8051ZM24.9841 39.0533C24.9469 41.1384 21.8477 41.1384 21.8112 39.0533C21.8485 36.9683 24.9477 36.9683 24.9841 39.0533ZM40.8487 39.0533C40.8114 41.1384 37.7131 41.1384 37.6758 39.0533C37.7131 36.9683 40.8114 36.9683 40.8487 39.0533Z" fill="#E8EDFF"/>
-                    </svg>    
                 </div>
             </div>
-        </header>
+        </nav>
 
         <!-- Баннер -->
-        <h1 class="logo2">AQUARIM</h1>
-        <div class="fish_restaurant">
-            <div class="fish">
-                <h2>РЫБНЫЙ</h2>
-            </div>
-            <div class="restaurant">
-                <h2>РЕСТОРАН</h2>
-            </div>
-        </div>
-        <div class="info">
-            <div class="info1">
-                <p class="info_1">Откройте для себя мир изысканных вкусов с нашими рыбными деликатесами, приготовленными специально для вас</p>
-                <button class="start">Меню</button>
-            </div>
-            <div class="fish_and_delivery">
-                <div class="fish">
-                    <svg class="info2" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.4648 3.51002C12.843 3.81999 13.858 4.30272 14.6254 4.86105C17.9986 3.92488 21.9071 3.54799 25.5996 3.91028C21.8522 -0.322547 16.6484 -0.837067 11.3151 1.02333C10.0319 1.47093 10.201 3.25521 11.4648 3.51002ZM5.99191 26.7882C8.55239 24.5536 11.4702 24.0424 14.6643 25.269C17.6312 26.445 22.4832 27.834 26.9078 28.5468C26.5887 28.0449 26.5859 28.0418 26.5642 28.0042C25.3707 25.9298 22.7534 20.5465 24.2199 15.3741C25.0842 12.326 27.1956 9.87369 30.4957 8.08512C30.5227 8.07 30.5178 8.07274 31.0534 7.7797C27.0265 6.25607 22.4509 6.03563 18.2208 6.71621C14.3927 7.32859 12.396 8.29431 10.521 9.53349C1.4047 15.5513 -1.20081 23.7116 0.479438 30.5612L0.48004 30.5632C2.44955 38.584 10.6838 43.6061 11.0334 43.816C11.2297 43.9339 11.4551 43.9999 11.7076 43.9999C12.0686 43.9999 14.3358 43.9235 15.9095 42.0699C17.3004 40.4317 17.6963 37.9929 17.0858 34.8216C16.9312 34.0174 16.0631 33.5522 15.3003 33.8861C15.279 33.8954 13.1405 34.817 10.5328 34.7192C7.3999 34.6012 4.93684 33.0927 3.20264 30.2328C3.64989 29.4552 4.58769 28.0137 5.99191 26.7882Z" fill="#496192"/>
-                        <path d="M43.9832 25.9295C42.8497 18.5438 39.616 12.4872 33.9224 9.14795C30.9193 10.7912 31.9553 10.2248 31.731 10.3471C29.0605 11.7926 27.3676 13.7206 26.6994 16.0773C25.5059 20.2865 27.7474 24.8863 28.7843 26.6947L30.2303 28.9693C34.5388 29.3622 39.0093 29.1249 42.7859 27.5078C43.2351 27.3153 43.5548 27.2031 43.7967 26.824C43.9661 26.5587 44.0324 26.2405 43.9832 25.9295ZM34.3879 19.1718C33.6444 19.1718 33.0883 18.5781 33.0883 17.8831C33.0883 17.187 33.6455 16.5944 34.3879 16.5944C35.0996 16.5944 35.6766 17.1714 35.6766 17.8831C35.6766 18.5948 35.0996 19.1718 34.3879 19.1718Z" fill="#496192"/>
-                    </svg> 
-                    <p class="info_2">Свежая рыба из наших аквариумов — гарантированная свежесть</p>                           
-                </div>
-                <div class="delivery">
-                    <svg class="info2" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.156122 11.5575C1.01071 15.5642 4.60849 18.5807 8.90474 18.5807C13.7877 18.5807 17.7603 14.6081 17.7603 9.72518C17.7603 8.71197 17.5915 7.7226 17.2682 6.78913L0.156122 11.5575ZM44 11.0972C44 10.3846 43.4223 9.80689 42.7097 9.80689H23.2697C22.5571 9.80689 21.9794 10.3846 21.9794 11.0972V15.312H44V11.0972ZM19.2269 22.1074C19.2269 22.82 19.8046 23.3977 20.5171 23.3977H23.7456C22.37 25.2387 20.9198 26.2263 19.4183 26.3381C16.9935 26.5195 14.9137 24.3817 14.3193 23.7044C14.0461 22.546 13.6908 21.4084 13.256 20.3004C11.914 20.8546 10.4445 21.1612 8.90474 21.1612C7.4057 21.1612 5.97273 20.8754 4.65786 20.3561C3.70806 22.6243 2.79747 25.8067 2.79747 29.677V37.9347C2.79747 38.6473 3.37517 39.225 4.08774 39.225H13.7217C14.4343 39.225 15.012 38.6473 15.012 37.9347V29.677C15.012 28.9614 14.9827 28.2698 14.9298 27.6027C16.0738 28.3294 17.5081 28.9295 19.1257 28.9295C19.2795 28.9295 19.4351 28.9241 19.5921 28.9128C22.3072 28.7182 24.7458 26.8633 26.8482 23.3977H39.7851C40.4977 23.3977 41.0754 22.82 41.0754 22.1074V17.8926H19.2269V22.1074ZM20.4697 1.89093C20.2784 1.2046 19.5674 0.803066 18.8805 0.994456L13.9369 2.37212C12.466 1.33423 10.7262 0.775024 8.90474 0.775024C6.5395 0.775024 4.3002 1.71322 2.5992 3.41672C1.09303 4.92521 0.187003 6.85622 0 8.9222L3.06559 8.06796C3.12348 8.06004 3.18145 8.04817 3.23926 8.03209L19.5732 3.4802C20.2597 3.28898 20.661 2.57744 20.4697 1.89093Z" fill="#496192"/>
-                    </svg>
-                    <p class="info_2">Качественная доставка, где горячие блюда сохраняют свой вкус</p>   
-                </div>
-            </div>
-        </div>
-
-        <!-- Секция "История рыбного искушения" -->
-        <section class="section" id="history">
-            <div class="history-content">
-                <h2>ИСТОРИЯ РЫБНОГО ИСКУШЕНИЯ</h2>
-                <p class="history-description">Наша история началась с мечты о создании места, где каждый может насладиться непревзойденным вкусом свежей рыбы прямо у себя дома. Мы хотели подарить вам настоящее морское путешествие.</p>
-                <p class="history-detail">Мы – это место, где каждая деталь имеет значение.</p>
-                <a href="#" class="button">Узнать больше</a>
-            </div>
-            <img src="1.png" alt="История рыбного искушения" class="history-image">
-        </section>
-
-        <!-- Секция "Меню" -->
-        <section class="section" id="menu">
-            <h2>Меню</h2>
-            <p>Свежая рыба из наших аквариумов – гарантированная свежесть</p>
-            <img src="2.png" alt="Меню">
-        </section>
-
-        <!-- Секция "Доставка" -->
-        <section class="section" id="delivery">
-            <h2>ДОСТАВКА</h2>
-            <p class="delivery-subtitle"><strong>ВЫСТРО, УДОБНО, НАДЕЖНО ДОСТАВКА ПО МОСКВЕ И МО</strong></p>
-            <div class="delivery-blocks">
-                <div class="delivery-block">
-                    <span class="delivery-number">01</span>
-                    <h3>ТЕРМОСУМКИ ДЛЯ СОХРАНЕНИЯ ТЕПЛА</h3>
-                    <p>Мы доставляем в специальных термосумках, чтобы сохранить температуру и свежесть блюд</p>
-                </div>
-                <div class="delivery-block">
-                    <span class="delivery-number">02</span>
-                    <h3>ГОРЯЧЕЕ И СВЕЖЕЕ</h3>
-                    <p>Ваш заказ не успеет остыть и не потеряет своего вкуса в пути</p>
-                </div>
-                <div class="delivery-block">
-                    <span class="delivery-number">03</span>
-                    <h3>КАЧЕСТВО КАК В РЕСТОРАНЕ</h3>
-                    <p>Вы получите блюда в том виде, в котором их приготовил повар – свежими, вкусными и красивыми.</p>
-                </div>
-            </div>
-            <img src="5.png" alt="Доставка" class="delivery-image">
-        </section>
-
-        <!-- Секция "Отзывы" -->
-        <section class="section" id="reviews">
-            <h2>БЕСЦЕННЫЕ ОТЗЫВЫ ДОКАЗЫВАЮЩИЕ НАШЕ МАСТЕРСТВО</h2>
-            <p>Мы гордимся доверием наших клиентов и ценим каждый отзыв, который вдохновляет нас становиться еще лучше</p>
-            <p class="reviews-click">Кликните на отзыв, чтобы узнать больше</p>
-            <img src="3.png" alt="Отзывы" class="reviews-image">
-        </section>
-
-        <!-- Секция "Оазис" -->
-        <section class="section" id="oasis">
-            <div class="oasis-content">
-                <h2>Оазис выгодных предложений</h2>
-                <p class="oasis-subtitle">СКИДКА 15% НА ПЕРВЫЙ ЗАКАЗ</p>
-                <p class="oasis-description">Воспользуйтесь этой возможностью и откройте для себя мир изысканных морских деликатесов.</p>
-                <a href="#" class="button">Заказать сейчас</a>
-            </div>
-            <img src="4.png" alt="Оазис выгодных предложений" class="oasis-image">
-        </section>
-
-        <!-- Новая секция "Бронь" -->
-        <section class="booking">
-            <div class="container">
-                <h2><span>БРОНЬ</span>ЗАБРОНИРУЙТЕ СВОЕ МЕСТО<br>ЗА ЛУЧШИМ СТОЛОМ</h2>
-                <div class="booking__content">
-                    <form action="" class="booking__form">
-                        <div class="input__wrapper input__wrapper-double">
-                            <div class="input__row">
-                                <label for="">Имя:</label>
-                                <input type="text">
-                            </div>
-                            <div class="input__row">
-                                <label for="">Телефон:</label>
-                                <input type="text" class="last">
-                            </div>
-                        </div>
-                        <div class="input__wrapper input__wrapper-triple">
-                            <div class="input__row">
-                                <label for="">Дата:</label>
-                                <input type="text">
-                            </div>
-                            <div class="input__row">
-                                <label for="">Время:</label>
-                                <input type="text">
-                            </div>
-                            <div class="input__row">
-                                <label for="">Кол-во гостей:</label>
-                                <input type="text" class="last">
-                            </div>
-                        </div>
-                        <label for="">Ваши пожелания:</label>
-                        <textarea name="" id=""></textarea>
-                        <button type="submit">Забронировать</button>
-                    </form>
-                    <div class="booking__image"><img src="6.png" alt="booking"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Секция "Контакты" -->
-        <section class="section" id="contacts">
-            <h2>КОНТАКТЫ</h2>
-            <p>МОРСКАЯ АТМОСФЕРА, ОБЪЕДИНЯЮЩАЯ ЛЮДЕЙ</p>
-            <p>ЕСЛИ У ВАС ОСТАЛИСЬ ВОПРОСЫ:</p>
-            <ul>
-                <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Тверская, д.8</li>
-                <li><i class="fas fa-phone"></i> +7 (965) 478–89–76</li>
-                <li><i class="fas fa-envelope"></i> oquorim@gmail.com</li>
-            </ul>
-            <p>МЫ В СОЦИАЛЬНЫХ СЕТЯХ:</p>
-            <div class="social-links">
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            </div>
-        </section>
-
-        <!-- Футер -->
-        <footer>
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AQUARIM</h3>
-                    <p>Рыбный ресторан, где каждый найдет что-то для себя. Мы предлагаем свежие морепродукты и уютную атмосферу.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Быстрые ссылки</h3>
-                    <ul>
-                        <li><a href="#history">История</a></li>
-                        <li><a href="#menu">Меню</a></li>
-                        <li><a href="#delivery">Доставка</a></li>
-                        <li><a href="#reviews">Отзывы</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Контакты</h3>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Тверская, д.8</li>
-                        <li><i class="fas fa-phone"></i> +7 (965) 478–89–76</li>
-                        <li><i class="fas fa-envelope"></i> oquorim@gmail.com</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Социальные сети</h3>
-                    <div class="social-links">
-                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <div class="container">
+            <div class="header__content">
+                <div class="header__content-wrapper">
+                    <div class="header__left header__block">
+                        <h1 class="header__left-title header__title">РЫБНЫЙ</h1>
+                        <p>Откройте для себя мир изысканных вкусов с нашими рыбными деликатесами</p>
+                        <a href="#" class="button">МЕНЮ</a>
+                    </div>
+                    <div class="header__right header__block">
+                        <h1 class="header__right-title header__title">РЕСТОРАН</h1>
+                        <ul>
+                            <li>
+                                <img src="7.png" alt="Новое изображение">
+                            
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2018–2025 AQUARIM. Все права защищены.</p>
+        </div>
+    </header>
+
+    <!-- Секция "О ресторане" -->
+    <section class="about">
+        <div class="container">
+            <h2><span>О РЕСТОРАНЕ</span>ИСТОРИЯ РЫБНОГО ИСКУШЕНИЯ</h2>
+            <div class="about__content">
+                <div class="about__content-left">
+                    <p>Наша история началась с мечты создать место с непревзойденным вкусом...</p>
+                    <div class="a__wrapper">
+                        <a href="#" class="button">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="about__content-right">
+                    <img src="1.png" alt="Шеф-повар">
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </section>
+
+    <!-- Секция "Меню" -->
+    <section class="menu">
+        <div class="container">
+            <h2><span>МЕНЮ</span> БЛЮДА, КОТОРЫЕ НАВСЕГДА ЗАПОМНЯТСЯ</h2>
+            <div class="menu__content">
+                <div class="menu__item">
+                    <div class="menu__item-text">
+                        <h3 class="menu__item-title">МОРСКОЙ БРИЗ</h3>
+                        <p>Тарелка морепродуктов с крабом, креветками и мидиями</p>
+                        <div class="menu__item-info">
+                            <div class="menu__item-price">1300 ₽</div>
+                            <div class="menu__item-mass">150 г</div>
+                        </div>
+                        <a href="#" class="menu__button">В корзину</a>
+                    </div>
+                    <div class="menu__item-img">
+                        <img src="2.png" alt="Морской бриз">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Доставка" -->
+    <section class="delivery">
+        <div class="container">
+            <h2><span>ДОСТАВКА</span>БЫСТРО, УДОБНО, НАДЕЖНО</h2>
+            <div class="delivery__grid">
+                <!-- Левая колонка -->
+                <div class="delivery__column">
+                    <div class="delivery__item">
+                        <div class="delivery__number">01</div>
+                        <div class="delivery__text">
+                            <h3>ТЕРМОСУМКИ ДЛЯ СОХРАНЕНИЯ ТЕПЛА</h3>
+                            <p>Мы доставляем в специальных термосумках, чтобы сохранить температуру и свежесть блюд</p>
+                        </div>
+                    </div>
+                    <div class="delivery__item">
+                        <div class="delivery__number">02</div>
+                        <div class="delivery__text">
+                            <h3>ГОРЯЧЕЕ И СВЕЖЕЕ</h3>
+                            <p>Ваш заказ не успеет остыть и не потеряет своего вкуса в пути</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Центральное изображение -->
+                <img src="5.png" alt="Доставка" class="delivery__image">
+    
+                <!-- Правая колонка -->
+                <div class="delivery__column">
+                    <div class="delivery__item">
+                        <div class="delivery__number">03</div>
+                        <div class="delivery__text">
+                            <h3>КАЧЕСТВО КАК В РЕСТОРАНЕ</h3>
+                            <p>Вы получите блюдо в том виде, в котором их приготовил повар - свежими, вкусными и красивыми</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Отзывы" -->
+    <section class="reviews">
+        <div class="container">
+            <h2><span>ОТЗЫВЫ</span> БЕСЦЕННЫЕ ОТЗЫВЫ ДОКАЗЫВАЮЩИЕ НАШЕ МАСТЕРСТВО</h2>
+            <div class="reviews__list">
+                <a href="#" class="review__item"><img src="3.png" alt="Отзыв 1"></a>
+                <a href="#" class="review__item"><img src="3.png" alt="Отзыв 2"></a>
+                <a href="#" class="review__item"><img src="3.png" alt="Отзыв 3"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Акции" -->
+    <section class="sales">
+        <div class="container">
+            <h2><span>АКЦИИ</span>ОАЗИС ВЫГОДНЫХ ПРЕДЛОЖЕНИЙ</h2>
+            <div class="menu__content">
+                <div class="menu__item">
+                    <div class="menu__item-text">
+                        <h3 class="menu__item-title">СКИДКА 15% НА ПЕРВЫЙ ЗАКАЗ</h3>
+                        <p>Воспользуйтесь этой возможностью и откройте для себя мир изысканных морских деликатесов</p>
+                        <a href="#" class="menu__button">Забрать скидку</a>
+                    </div>
+                    <div class="menu__item-img">
+                        <img src="4.png" alt="Акция">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Бронирование" -->
+    <section class="booking">
+        <div class="booking__container">
+            <div class="booking__form-wrapper">
+                <div class="tytle">
+                    <div class="zero-one3">
+                        <div class="his_0">
+                            <p class="caption">БРОНЬ</p>
+                        </div>
+                        <div class="his_1">
+                            <h2 class="his1">ЗАБРОНИРУЙТЕ СВОЕ МЕСТО</h2>
+                        </div>
+                    </div>
+                    <div class="his_2">
+                        <h2 class="his2">ЗА ЛУЧШИМ СТОЛОМ</h2>
+                    </div>
+                </div>
+                <div class="to_book">
+                    <fieldset>
+                        <div class="first_reg">
+                            <p><label>Имя: <input class="one" type="text" name="name-field"></label></p>
+                            <p><label>Телефон: <input class="one" type="tel" name="tel"></label></p>
+                        </div>
+                        <div class="second_reg">
+                            <p><label>Дата: <input class="two" type="text" name="text-field"></label></p>
+                            <p><label>Время: <input class="two" type="number" name="time-field"></label></p>
+                            <p><label>Кол-во гостей: <input class="two" type="number" name="kolvo"></label></p>
+                        </div>
+                        <div class="third_reg">
+                            <p><label>Ваши пожелания: <input class="threee" type="text" name="name-field"></label></p>
+                        </div>
+                    </fieldset>
+                    <button class="book">Забронировать</button>
+                </div>
+            </div>
+            <img class="bron" src="6.png" alt="блюдо">
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AQUARIM</h3>
+                <p>Рыбный ресторан, где каждый найдет что-то для себя. Мы предлагаем свежие морепродукты и уютную атмосферу.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="#">О ресторане</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Тверская, д.8</li>
+                    <li><i class="fas fa-phone"></i> +7 (965) 478–89–76</li>
+                    <li><i class="fas fa-envelope"></i> oquorim@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2018–2025 AQUARIM. Все права защищены.</p>
+        </div>
+    </footer>
 </body>
 </html>
