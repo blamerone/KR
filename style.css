@@ -74,86 +74,171 @@ ul, ol {
     margin: 0;
 }
 
-/* Шапка */
+/* Стили для новой шапки */
 header {
-    background-image: url('11.png'); /* Картинка как фон */
-    background-size: 50%; /* Уменьшаем размер изображения */
-    background-position: center; /* Центрируем изображение */
-    background-repeat: no-repeat; /* Запрещаем повторение */
-    color: #fff;
+    background-color: #011845; /* Темно-синий цвет */
     padding: 20px 0;
-    text-align: center;
-    position: relative; /* Для наложения затемнения */
+    color: #fff;
 }
 
-/* Затемнение фона для лучшей читаемости текста */
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(1, 24, 69, 0.7); /* Темно-синий с прозрачностью */
-    z-index: 1; /* Чтобы затемнение было поверх фона */
-}
-
-.header-top {
-    position: relative; /* Чтобы текст был поверх затемнения */
-    z-index: 2; /* Текст выше затемнения */
+.field {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
-header h1 {
-    font-size: 48px;
-    margin: 0;
-    font-weight: 800;
-    letter-spacing: 2px;
+/* Стили для логотипа */
+.logo {
+    display: flex;
+    align-items: center; /* Выравниваем элементы по вертикали */
+    gap: 10px; /* Расстояние между элементами */
+}
+
+.logo .hello {
+    font-size: 24px;
+    font-weight: bold;
     color: #e67e22; /* Оранжевый акцент */
 }
 
-nav ul {
+/* Стили для картинки в логотипе */
+.header-image {
+    width: 30px; /* Размер картинки */
+    height: auto; /* Сохраняем пропорции */
+}
+
+.menu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
 }
 
-nav ul li a {
+/* Стили для кнопок в меню */
+.menu .item, .menu .item1 {
+    padding: 10px 20px; /* Меньшие отступы для кнопок меню */
+    font-size: 16px; /* Меньший размер текста */
+    background-color: transparent; /* Прозрачный фон */
+    color: #fff; /* Белый текст */
+    border: none; /* Убираем границу */
+    font-family: 'Oceanic', Arial, sans-serif; /* Используем импортируемый шрифт */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: color 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* Стили для кнопок при наведении */
+.menu .item:hover, .menu .item1:hover {
+    color: #e67e22; /* Рыжий цвет при наведении */
+}
+
+.basket svg {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.basket svg path {
+    transition: fill 0.3s ease;
+}
+
+.basket svg:hover path {
+    fill: #e67e22; /* Оранжевый акцент при наведении */
+}
+
+/* Стили для баннера */
+.banner {
+    position: relative;
+    background-color: #011845; /* Темно-синий цвет */
+    padding: 60px 20px;
+    text-align: center;
     color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #e67e22; /* Оранжевый акцент при наведении */
+.shrimp {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.header-bottom {
-    position: relative; /* Чтобы текст был поверх затемнения */
-    z-index: 2; /* Текст выше затемнения */
-    padding: 40px 20px;
+.logo_banner h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #e67e22; /* Оранжевый акцент */
+    margin-bottom: 20px;
 }
 
-.header-bottom h2 {
+.fish_restaurant {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.fish_restaurant h2 {
     font-size: 32px;
-    margin: 10px 0;
     font-weight: 500;
     color: #e67e22; /* Оранжевый акцент */
 }
 
-.header-bottom p {
-    font-size: 24px;
-    font-weight: 300;
-    margin: 10px auto;
+.info {
     max-width: 800px;
+    margin: 0 auto;
+}
+
+.info1 {
+    margin-bottom: 30px;
+}
+
+.info_1 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Общие стили для всех кнопок */
+button, .start, .booking__form button {
+    background-color: #e67e22; /* Рыжий цвет */
+    color: #fff; /* Белый текст */
+    border: none; /* Убираем границу */
+    border-radius: 25px; /* Закругленные края */
+    padding: 12px 30px; /* Отступы внутри кнопки */
+    font-size: 18px; /* Размер текста */
+    font-weight: 500; /* Жирность текста */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: all 0.3s ease; /* Плавные анимации */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block; /* Чтобы кнопки были в строку */
+}
+
+/* Стили для кнопок при наведении */
+button:hover, .start:hover, .booking__form button:hover {
+    background-color: #d35400; /* Темнее рыжий при наведении */
+    transform: translateY(-2px); /* Легкий подъем */
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4); /* Тень */
+}
+
+.fish_and_delivery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.fish, .delivery {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info2 {
+    width: 40px;
+    height: 40px;
+}
+
+.info_2 {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
 }
 
 /* Секции */
@@ -231,24 +316,65 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-/* Форма бронирования */
-.reservation-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Новая секция "Бронь" */
+.booking {
+    padding: 60px 20px;
+    background-color: #011845; /* Темно-синий цвет */
+    color: #fff;
 }
 
-.form-group {
-    width: 100%;
-    max-width: 400px;
+.booking h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.booking h2 span {
+    color: #e67e22; /* Оранжевый акцент */
+}
+
+.booking__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.booking__form {
+    flex: 1;
+    max-width: 600px;
+}
+
+.input__wrapper {
+    display: flex;
+    gap: 20px;
     margin-bottom: 20px;
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
+.input__wrapper-double {
+    flex-direction: row;
+}
+
+.input__wrapper-triple {
+    flex-direction: row;
+}
+
+.input__row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input__row label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input__row input {
     padding: 10px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #ccc;
@@ -256,36 +382,43 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Кнопки */
-.button {
-    display: inline-block;
+.input__row textarea {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+    resize: vertical;
+}
+
+.booking__form button {
     padding: 12px 30px;
     background-color: #e67e22;
-    color: #fff !important;
-    text-decoration: none;
+    color: #fff;
     border: none;
     border-radius: 25px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: 15px 0;
+    margin-top: 20px;
 }
 
-.button:hover {
+.booking__form button:hover {
     background-color: #d35400;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
 }
 
-.reservation-form .button {
-    width: auto;
-    margin-top: 20px;
+.booking__image {
+    flex: 1;
+    max-width: 500px;
 }
 
-.button:active {
-    transform: translateY(0);
-    box-shadow: none;
+.booking__image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Контакты */
@@ -313,136 +446,184 @@ footer {
     color: #fff;
     padding: 60px 20px 20px;
     margin-top: auto; /* Прижимает футер к низу страницы */
+    text-align: center;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
-    padding-bottom: 40px;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.footer-section {
-    flex: 1;
-    min-width: 250px;
-    text-align: left;
-}
-
-.footer-section h3 {
+.footer-logo .hello {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: bold;
+    color: #e67e22; /* Оранжевый акцент */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     margin-bottom: 20px;
-    color: #e67e22; /* Оранжевый акцент */
 }
 
-.footer-section p {
-    font-size: 16px;
-    line-height: 1.6;
-    opacity: 0.9;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-section ul li {
-    margin: 15px 0;
-    font-size: 16px;
-    opacity: 0.9;
-}
-
-.footer-section ul li i {
-    margin-right: 10px;
-    color: #e67e22; /* Оранжевый акцент */
-}
-
-.footer-section ul li a {
+.footer-links a {
     color: #fff;
+    font-size: 18px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-section ul li a:hover {
+.footer-links a:hover {
     color: #e67e22; /* Оранжевый акцент при наведении */
 }
 
-.footer-bottom {
-    text-align: center;
-    padding: 20px 0;
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #e67e22;
+    transform: translateY(-5px);
+}
+
+.footer-info {
     font-size: 14px;
     opacity: 0.8;
     margin-top: 20px;
 }
 
-/* Адаптивность */
+.footer-info a {
+    color: #e67e22;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: #d35400;
+}
+
+/* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
-    header h1 {
+    .field {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner h1 {
         font-size: 36px;
     }
 
-    .header-bottom h2 {
+    .fish_restaurant h2 {
         font-size: 24px;
     }
 
-    .header-bottom p {
-        font-size: 18px;
-    }
-
-    .delivery-blocks {
+    .booking__content {
         flex-direction: column;
-        align-items: center;
+        gap: 20px;
     }
 
-    .delivery-block {
-        width: 100%;
-        max-width: 400px;
+    .booking__form {
+        max-width: 100%;
     }
 
-    .history-image,
-    #menu img,
-    #reviews img {
-        max-width: 90%;
+    .booking__image {
+        max-width: 100%;
     }
 
-    .footer-content {
+    .footer-links {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-section {
-        text-align: center;
-    }
-
-    .footer-section ul li {
-        margin: 10px 0;
-    }
-
-    .social-links {
-        justify-content: center;
+        gap: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 32px;
+    .logo .hello {
+        font-size: 20px;
     }
 
-    nav ul {
-        gap: 10px;
-    }
-
-    nav ul li a {
+    .menu .menu_item {
         font-size: 16px;
     }
 
-    .button {
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .fish_restaurant h2 {
+        font-size: 20px;
+    }
+
+    .start {
         font-size: 16px;
         padding: 10px 20px;
     }
+
+    .booking h2 {
+        font-size: 24px;
+    }
+
+    .input__wrapper {
+        flex-direction: column;
+    }
+
+    .input__row input, .input__row textarea {
+        width: 100%;
+    }
+
+    .footer-logo .hello {
+        font-size: 20px;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+    }
+
+    .footer-social a {
+        font-size: 20px;
+    }
+
+    .footer-info {
+        font-size: 12px;
+    }
+}
+
+/* Дополнительные стили для улучшения пользовательского опыта */
+::selection {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #011845;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e67e22;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d35400;
 }
