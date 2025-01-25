@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AQUARIM Рыбный Ресторан</title>
+    <title>AQUARIM <p class="hello">AQUA</p>
+        <img src="11.png" alt="Креветка на вилке" class="header-image">
+        <p class="hello">RIM</p> Ресторан</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Шапка -->
     <header class="header">
         <nav>
@@ -41,17 +42,16 @@
                 <div class="header__content-wrapper">
                     <div class="header__left header__block">
                         <h1 class="header__left-title header__title">РЫБНЫЙ</h1>
-                        <p>Откройте для себя мир изысканных вкусов с нашими рыбными деликатесами</p>
+                        <p class="line-1">Откройте для себя мир изысканных вкусов</p> 
+                        <p class="line-2">с нашими рыбными деликатесами</p>
+                        <p class="line-3">приготовленными специально для вас</p>
                         <a href="#" class="button">МЕНЮ</a>
                     </div>
                     <div class="header__right header__block">
                         <h1 class="header__right-title header__title">РЕСТОРАН</h1>
-                        <ul>
-                            <li>
-                                <img src="7.png" alt="Новое изображение">
-                            
-                            </li>
-                        </ul>
+                        <div class="header__image-wrapper">
+                            <img src="7.png" alt="Новое изображение">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -61,10 +61,12 @@
     <!-- Секция "О ресторане" -->
     <section class="about">
         <div class="container">
-            <h2><span>О РЕСТОРАНЕ</span>ИСТОРИЯ РЫБНОГО ИСКУШЕНИЯ</h2>
+            <h2><span>О РЕСТОРАНЕ</span> ИСТОРИЯ РЫБНОГО ИСКУШЕНИЯ</h2>
             <div class="about__content">
                 <div class="about__content-left">
-                    <p>Наша история началась с мечты создать место с непревзойденным вкусом...</p>
+                    <p>Наша история началась с мечты о создании места, 
+                        где каждый может насладиться непревзойденным вкусом свежей рыбы прямо у себя дома. 
+                        Мы поставили перед собой задачу предложить нечто большее, чем просто блюда из рыбы - мы хотели подарить вам настоящее морское путешествие.</p>
                     <div class="a__wrapper">
                         <a href="#" class="button">Узнать больше</a>
                     </div>
@@ -144,9 +146,9 @@
         <div class="container">
             <h2><span>ОТЗЫВЫ</span> БЕСЦЕННЫЕ ОТЗЫВЫ ДОКАЗЫВАЮЩИЕ НАШЕ МАСТЕРСТВО</h2>
             <div class="reviews__list">
-                <a href="#" class="review__item"><img src="3.png" alt="Отзыв 1"></a>
-                <a href="#" class="review__item"><img src="3.png" alt="Отзыв 2"></a>
-                <a href="#" class="review__item"><img src="3.png" alt="Отзыв 3"></a>
+                <a href="#" class="review__item"><img src="8.png" alt="Отзыв 1"></a>
+                <a href="#" class="review__item"><img src="9.png" alt="Отзыв 2"></a>
+                <a href="#" class="review__item"><img src="10.png" alt="Отзыв 3"></a>
             </div>
         </div>
     </section>
@@ -154,7 +156,7 @@
     <!-- Секция "Акции" -->
     <section class="sales">
         <div class="container">
-            <h2><span>АКЦИИ</span>ОАЗИС ВЫГОДНЫХ ПРЕДЛОЖЕНИЙ</h2>
+            <h2><span>АКЦИИ</span> ОАЗИС ВЫГОДНЫХ ПРЕДЛОЖЕНИЙ</h2>
             <div class="menu__content">
                 <div class="menu__item">
                     <div class="menu__item-text">
@@ -213,37 +215,32 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>AQUARIM</h3>
-                <p>Рыбный ресторан, где каждый найдет что-то для себя. Мы предлагаем свежие морепродукты и уютную атмосферу.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Быстрые ссылки</h3>
+                <h3>О РЕСТОРАНЕ</h3>
                 <ul>
-                    <li><a href="#">О ресторане</a></li>
+                    <li><a href="#">О шефе</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Невесты</a></li>
+                    <li><a href="#">Команда</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>ДЛЯ ПОСЕТИТЕЛЕЙ</h3>
+                <ul>
                     <li><a href="#">Меню</a></li>
-                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Отзывы</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>Контакты</h3>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Тверская, д.8</li>
-                    <li><i class="fas fa-phone"></i> +7 (965) 478–89–76</li>
-                    <li><i class="fas fa-envelope"></i> oquorim@gmail.com</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Социальные сети</h3>
-                <div class="social-links">
-                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
         </div>
+    
         <div class="footer-bottom">
-            <p>&copy; 2018–2025 AQUARIM. Все права защищены.</p>
+            <div class="footer-legal">
+                <p>&copy; 2018–2024 AQUARIM</p>
+                <a href="#">Политика обработки персональных данных</a>
+                <p>Design by <a href="https://t.me/sshultee" target="_blank">@sshultee</a></p>
+            </div>
         </div>
     </footer>
 </body>
