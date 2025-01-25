@@ -40,15 +40,6 @@
          url('fonts/TRIAL_Oceanic-Poster-BF6487cfe5ecab1.woff') format('woff');
     font-weight: 900;
 }
-
-/* Текстовые варианты (если нужны отдельно) */
-@font-face {
-    font-family: 'Oceanic Text';
-    src: url('fonts/TRIAL_OceanicText-Bold-BF6487cfe5d76e7.woff2') format('woff2'),
-         url('fonts/TRIAL_OceanicText-Bold-BF6487cfe5d76e7.woff') format('woff');
-    font-weight: 700;
-}
-
 @font-face {
     font-family: 'Oceanic Text';
     src: url('fonts/TRIAL_OceanicText-Book-BF6487cfe5da4b1.woff2') format('woff2'),
